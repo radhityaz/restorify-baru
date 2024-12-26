@@ -1943,7 +1943,7 @@ def main():
     selected_menu = st.sidebar.selectbox("Navigasi", menu_options)
     
     if selected_menu == "Beranda":
-        st.subheader("Selamat Datang di Sistem Manajemen Restoran")
+        st.subheader("Selamat Datang di Restorify")
         st.write("""
             Aplikasi ini membantu Anda dalam mengelola operasi restoran secara efisien.
             Anda dapat mengelola data karyawan, pelanggan, supplier, bahan baku, menu, transaksi,
