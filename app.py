@@ -1,3 +1,6 @@
+#kerjaan bagian radit.
+
+
 import streamlit as st
 import psycopg2
 from psycopg2 import sql, extras
