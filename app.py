@@ -151,11 +151,11 @@ def insert_initial_data(conn, cursor):
         count = cursor.fetchone()[0]
         if count == 0:
             pelanggan_data = [
-                ('P001', 'John Doe', 'john.doe@example.com'),
-                ('P002', 'Jane Smith', 'jane.smith@example.com'),
-                ('P003', 'Michael Brown', 'michael.brown@example.com'),
-                ('P004', 'Emily Davis', 'emily.davis@example.com'),
-                ('P005', 'David Wilson', 'david.wilson@example.com')
+                ('P001', 'Mansur', 'mansur123@contohemail.com'),
+                ('P002', 'Sir Joko', 'joko456@contohemail.com'),
+                ('P003', 'Pak Amba', 'amba789@contohemail.com'),
+                ('P004', 'Ibu Tukam', 'tukam101112@contohemail.com'),
+                ('P005', 'Maemunah', 'maemunah131415@contohemail.com')
             ]
             cursor.executemany('''
                 INSERT INTO pelanggan (pelanggan_id, cus_name, contact_info)
@@ -1947,7 +1947,7 @@ def main():
         st.write("""
             Aplikasi ini membantu Anda dalam mengelola operasi restoran secara efisien.
             Anda dapat mengelola data karyawan, pelanggan, supplier, bahan baku, menu, transaksi,
-            feedback, dan juga fitur absensi sidik jari (mockup).
+            feedback, dan juga fitur absensi sidik jari (mockup). Tubes Manajemen Data (Radhitya, Chindy, Hasyir)
         """)
         st.image(
             "https://img.freepik.com/free-vector/woman-wearing-medical-mask-client_52683-41295.jpg",
