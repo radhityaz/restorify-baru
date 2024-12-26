@@ -1675,9 +1675,7 @@ def absensi_per_karyawan():
 def main():
     st.set_page_config(page_title="Restorify", layout="wide")
     st.title("Restorify")
-    
-    # Pastikan tabel sudah dibuat dan data awal sudah diisi
-    create_tables()
+
     
     menu_options = [
         "Beranda",
