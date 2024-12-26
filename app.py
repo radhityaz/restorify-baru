@@ -7,16 +7,17 @@ import pandas as pd
 def get_connection():
     try:
         conn = psycopg2.connect(
-            dbname="postgres",  # Ganti dengan nama database Anda jika berbeda
-            user="postgres.pecttuqrubyuwppwliai",  # Ganti dengan username Supabase Anda
-            password="YOUR_PASSWORD",  # Ganti dengan password Supabase Anda
-            host="aws-0-ap-southeast-1.pooler.supabase.com",  # Ganti dengan host Supabase Anda
-            port="6543"  # Sesuaikan dengan port Supabase Anda
+            dbname=st.secrets["database"]["dbname"],
+            user=st.secrets["database"]["user"],
+            password=st.secrets["database"]["password"],
+            host=st.secrets["database"]["host"],
+            port=st.secrets["database"]["port"]
         )
         return conn
     except Exception as e:
         st.error(f"Error connecting to database: {e}")
         return None
+
 
 # -------------------- MEMBUAT TABEL --------------------
 def create_tables():
